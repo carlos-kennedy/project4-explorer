@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+:root {
+  font-family: "Epilogue", sans-serif;
+
+  --text-dark-accent: rgb(113, 88, 239);
+  --text-dark: rgb(9, 0, 57);
+  --text-dark-gray: rgba(10, 0, 57, 0.639);
+  --bg-light: rgb(236, 233, 253);
+  font-size: 62.5%;
+}
+
+body,
+html {
+  font-size: 1.6rem;
+  background: var(--bg-light);
+  scroll-behavior: smooth;
+}
+main {
+  padding-inline: 2.3rem;
+  padding-block: 6rem 6.6rem;
+  max-width: 32.9rem;
+  min-height: 74.4rem;
+}
+
+h5 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 3.2;
+  /* Quando a unidade é muito pequena, ex: 0.3 é melhor colocar como
+  pixel */
+  letter-spacing: 3px;
+  color: var(--text-dark-accent);
+  text-align: left;
+  text-transform: uppercase;
+}
+
+h1 {
+  margin-block: 1.7rem 1.5rem;
+  font-size: 4rem;
+  font-weight: 800;
+  line-height: 4.8rem;
+  letter-spacing: 0;
+  text-align: left;
+  color: var(--text-dark);
+}
+
+p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 3.2rem;
+  color: var(--text-dark-gray);
+}
+
+a {
+  display: inline-block;
+  color: var(--text-dark);
+  text-decoration: none;
+  margin-block: 3.2rem 7.2rem;
+
+  transition: filter 0.3s;
+}
+
+a:hover {
+  filter: brightness(7.4);
+}
+
+ul li {
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+  font-weight: 700;
+  letter-spacing: 0px;
+  text-align: left;
+
+  color: var(--text-dark);
+
+  display: flex;
+  gap: 3.8rem;
+  max-width: 25.7rem;
+}
+
+ul li + li {
+  margin-top: 3.2rem;
+}
+
+ul li span {
+  font-size: 7.2rem;
+  font-weight: 800;
+  line-height: 8rem;
+  letter-spacing: 2px;
+}
+ul li:nth-child(2) {
+  gap: 2.6rem;
+}
+ul li:nth-child(3) {
+  gap: 2.5rem;
+}
+
+@media (min-width: 700px) {
+  body {
+    padding: 8rem;
+  }
+  main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 11.6rem;
+    max-width: 1070rem;
+  }
+  div.content-without-list {
+    max-width: 484px;
+    align-self: start;
+  }
+
+  ul li {
+    align-items: center;
+    max-width: 450px;
+    gap: 6.6rem;
+  }
+  ul li:nth-child(2) {
+    gap: 5.4rem;
+  }
+  ul li:nth-child(3) {
+    gap: 5.3rem;
+  }
+}
