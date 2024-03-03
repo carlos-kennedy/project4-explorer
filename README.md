@@ -19,4 +19,4 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 🚧 Projeto
 
-O ResponsiveLayout é um projeto criado apartir da quarta parte do módulo de HTML & CSS do Explorer.
+O ResponsiveLayout é um projeto criado a partir da quarta parte do módulo de HTML & CSS do Explorer.
